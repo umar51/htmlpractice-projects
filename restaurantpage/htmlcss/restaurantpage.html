@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="restaurantpage.css">
+
+    <title>Restautrant page</title>
+
+</head>
+
+<body>
+
+    <!-- Main Div-->
+    <div class="wrapper">
+
+        <!-- drop down menu -->
+
+        <nav class="menu">
+
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">=</span>
+                <span class="close">x</span>
+                Menu
+            </button> 
+
+            <ul id="menu-list">
+                <li>
+                    <a href="">Cigrettes</a>
+
+                </li>
+
+                <li>
+                    <a href="">E-cigs</a>
+
+                </li>
+
+                <li>
+                    <a href="">Pan</a>
+
+                </li>
+
+                <li>
+                    <a href="">Pipe</a>
+
+                </li>
+
+                <li>
+                    <a href="">Lighters</a>
+
+                </li>
+                
+            </ul>
+
+        </nav>
+
+        <div class="top">
+            <header class="hero">
+                <h1>Jutt Pan Shop</h1>
+                <p>Be like Jutta g, Quality Smokes</p>
+            </header>
+           
+
+            <div class="cta cta1">
+                <p class="price">50$</p>
+                <p>Cigarettes</p>            
+            </div>
+
+            <div class="cta cta2">
+                <p class="price">100$</p>
+                <p>Vapes</p>            
+            </div>
+        </div>
+
+        <section class="features">
+
+            <div class="feature">
+                <span class="icon">
+                    <img src="../cigarette.png">
+                   
+
+                </span>
+
+                <h3>Cigarettes</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="icon">
+                    <img src="../vape.png">                            
+                </span>
+
+                <h3>Vapes</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda
+                </p>
+
+            </div>
+
+            <div class="feature">
+                <span class="icon">
+                    <img src="../leaf.png"/>
+                </span>
+
+                <h3>Sweet Pan</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda
+                </p>
+
+            </div>
+
+            <div class="feature">
+                <img src="../lighter.png"/>
+            </span>
+
+                <h3>Lighters</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="about">
+            <img src="https://p1.pxfuel.com/preview/676/142/360/smoking-cigarette-man-male-tobacco-nicotine.jpg" alt="smoker" class="about_mockup"/>
+            <div class="about-details">
+                <h2>
+                    Features Cigarettes
+                </h2>
+                <p>Slim Profile, easy to hold and loaded with nicotine.</p>
+                <p>This is the one you have been waiting for.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>
+                
+                Instantgrams
+              
+
+            </h2>
+
+            <img src="https://p2.piqsels.com/preview/67/202/462/banana-pencil-yellow-color.jpg"/>
+            <img src="https://p0.piqsels.com/preview/508/99/815/5beabb59966e1.jpg"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiL8U1r0mOfYv95CI8iKqscr9bMeMJ5ccU6KkzSedDUIarDUYpnawgR9wocbN8_Dwl1cKAO-hLWpRx93C9OExNivYNDk-yzsQ&usqp=CAU&ec=45732300"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfJjH9d65WyxXGFVvF6wqK9oGGOX7EudgUy4hvDZTVLjSj4UCFE3PJb-naNfpCI07fXniFR7W5IfU-fN1ihQKAXhW0yg_Z0AY&usqp=CAU&ec=45732300"/>
+            <img src="https://i.ytimg.com/vi/0VKQYJ70n1M/hqdefault.jpg"/>
+            <img src="https://p1.pxfuel.com/preview/38/394/439/training-exercise-sport-person-fitness-young.jpg"/>
+        </section>
+    </div>
+
+    <!--Javascript for controlling Menu drop down function-->
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({target}) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || 
+            false;
+
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+    </script>
+
+
+        
+    
+</body>
+</html>
